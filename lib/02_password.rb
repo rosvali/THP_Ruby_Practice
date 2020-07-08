@@ -1,13 +1,11 @@
 def signup
 	print "Choose a password : "
-	mdp = gets.chomp
-	return mdp
+	return gets.chomp
 end
 
 def login(mdp)
 	print "Enter your password : "
-	while gets.chomp != mdp
-		print "incorrect password, try again : "
+	print "incorrect password, try again : " while gets.chomp != mdp 
 	end
 end
 

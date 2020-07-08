@@ -1,12 +1,12 @@
 def half_pyramid(nb)
 	1.upto(nb) do |i| 
 		print " " * (nb - i)
-		puts "#" * (i + i - 1)
+		puts "#" * i
 	end
 end
 
 def full_pyramid(nb)
-	1.upto(nb) do |i| 
+  1.upto(nb) do |i| 
 		print " " * (nb - i)
 		puts "#" * (i + i - 1)
 	end

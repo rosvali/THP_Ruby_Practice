@@ -1,8 +1,7 @@
 def ask_first_name
-	puts "Quel est ton nom ?"
-	print "> "
-	name = gets.chomp
-	return name
+  puts "Quel est ton nom ?"
+  print "> "
+  return gets.chomp
 end
 
 def say_hello(name)

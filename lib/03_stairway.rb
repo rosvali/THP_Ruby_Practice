@@ -18,23 +18,22 @@ def goose(nb, i)
 end
 
 def average(tab)
-	somme = 0
-	tab.each {|i| (somme = somme + i)}
-	puts (somme / 100)
+	puts (tab.reduce(0) { |somme, i| (somme + i)}) / 100
 end
 
 def average_finish_time
-	tab = []
-	100.times do
+tab = (0..99).to_a
+	tab.map! do |x|
 		i = 0
 		step = 0
 		while step < 10
 			step = goose(rand(1..6), step)
 			i = i + 1
 		end
-		tab << i
+		x = i
 	end
 	average(tab)
+	#pp tab
 end
 
 def perform
