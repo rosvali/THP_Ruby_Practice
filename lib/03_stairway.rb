@@ -18,7 +18,7 @@ def goose(nb, i)
 end
 
 def average(tab)
-	puts (tab.reduce(0) { |somme, i| (somme + i)}) / 100
+	puts tab.sum / 100
 end
 
 def average_finish_time
