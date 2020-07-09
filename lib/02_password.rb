@@ -5,8 +5,7 @@ end
 
 def login(mdp)
 	print "Enter your password : "
-	print "incorrect password, try again : " while gets.chomp != mdp 
-	end
+	print "incorrect password, try again : " while gets.chomp != mdp
 end
 
 def welcome_screen
